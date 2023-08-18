@@ -1,0 +1,96 @@
+*{
+    --Tomato: hsl(4, 100%, 67%);
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+--CharcoalGrey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+}
+body{
+    font-family: Roboto ;
+    background-color: var(--DarkSlateGrey);
+}
+p{
+    font-size: 16px;
+    color: var(--Grey);
+    font-weight: 400;
+}
+h1{
+    color: var(--DarkSlateGrey);
+    font-weight: 700;
+    font-size: 3em;
+}
+label{
+    color: var(--DarkSlateGrey);
+    font-weight: 700;
+}
+#email::placeholder{
+    color: var(--Grey);
+    font-weight: 400;
+}
+button{
+    color: var(--White);
+    background-color: var(--DarkSlateGrey);
+    font-weight: 700;
+}
+
+.page {
+    background-color: var(--White);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px ;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 200px;
+    border-radius: 10px;
+}
+.pager{
+    padding: 70px 60px;
+}
+.pagel{
+    padding: 0;
+    padding-right: 10px;
+}
+.pager>input,button{
+    padding: 12px 1px;
+    margin-top: 10px;
+    width: 95%;
+    border-radius: 5px;
+}
+input:active button:active ,button:hover{
+    background-color: #FF6155;
+}
+.success{
+    background-color: var(--White);
+    width: 30%;
+    align-content: center;
+    margin: 30em;
+    border-radius: 20px;
+    padding: 50px;
+}
+span{
+    color: var(--DarkSlateGrey);
+    font-weight: 700;
+}
+@media screen and (max-width:375px){
+
+    .page{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        overflow: hidden;
+        width: 95%;
+        /* position: absolute; */
+    }
+    .pager{
+        padding: 0 2px 0 20px;
+        margin-top: -15px;
+    }
+    
+    
+    .success{
+    width: 95%;
+    margin: 0 auto;
+    padding: 5px 0 20px  5px;
+    margin-bottom: 30px;
+    }
+}
