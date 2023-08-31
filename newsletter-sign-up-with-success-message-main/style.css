@@ -9,6 +9,8 @@ body{
     font-family: Roboto ;
     background-color: var(--DarkSlateGrey);
 }
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
 p{
     font-size: 16px;
     color: var(--Grey);
